@@ -73,7 +73,7 @@
       <recent name="C:\Users\Danylo\ComplexLabWithTests\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MenuCaller">
+  <component name="RunManager" selected="JUnit.All in ComplexLabWithTests">
     <configuration name="MenuCaller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="userMenu.MenuCaller" />
       <module name="ComplexLabWithTests" />
@@ -89,14 +89,6 @@
     </configuration>
     <configuration name="All in ComplexLabWithTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ComplexLabWithTests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in ComplexLabsWithTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ComplexLabsWithTests" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
@@ -135,13 +127,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SignUpCommandTest.signUpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ComplexLabWithTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="commandTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="commandTests" />
+      <option name="MAIN_CLASS_NAME" value="commandTests.SignUpCommandTest" />
+      <option name="METHOD_NAME" value="signUpTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in ComplexLabWithTests" />
+        <item itemvalue="JUnit.SignUpCommandTest.signUpTest" />
         <item itemvalue="Application.MenuCaller" />
         <item itemvalue="JUnit.FindUserTest" />
         <item itemvalue="JUnit.FindUserTest.finUserTest" />
-        <item itemvalue="JUnit.All in ComplexLabWithTests" />
-        <item itemvalue="JUnit.All in ComplexLabsWithTests" />
       </list>
     </recent_temporary>
   </component>

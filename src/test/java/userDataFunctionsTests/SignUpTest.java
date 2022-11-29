@@ -17,10 +17,12 @@ public class SignUpTest {
     @Mock
     String inputString =
             "mafusaillo" +
-            System.getProperty("line.separator") +
-            "dan" +
-            System.getProperty("line.separator") +
-            "haha";
+                    System.getProperty("line.separator") +
+                    "dan" +
+                    System.getProperty("line.separator") +
+                    "haha" +
+                    System.getProperty("line.separator") +
+                    "dpo.prots@gmail.com";
 
     @Test
     @DisplayName("Sign up should work")

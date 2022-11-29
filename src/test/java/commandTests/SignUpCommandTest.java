@@ -21,7 +21,9 @@ public class SignUpCommandTest {
                     System.getProperty("line.separator") +
                     "dan" +
                     System.getProperty("line.separator") +
-                    "haha";
+                    "haha" +
+                    System.getProperty("line.separator") +
+                    "dpo.prots@gmail.com";
 
     @Test
     @DisplayName("Sign up should work")
