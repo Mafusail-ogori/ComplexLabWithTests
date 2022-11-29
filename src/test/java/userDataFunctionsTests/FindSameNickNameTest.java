@@ -13,7 +13,7 @@ public class FindSameNickNameTest {
     UserData userData = new UserData();
 
     @Mock
-    User user = new User("mafusaillo", "dan", "haha");
+    User user = new User("mafusaillo", "dan", "haha", "dpo.prots@gmail.com");
 
     @Test
     @DisplayName("Find same nickName should work!")

@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4520111-a99f-4295-9256-28ee56814f72" name="Changes" comment="ComplexLab">
+      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logger/EvaluatorClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logger/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/loggedInfo.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/FindUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/FindUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/userMenu/MenuCaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/userMenu/MenuCaller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/signUpRecords.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/signUpRecords.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/commandTests/DeleteAccountCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/commandTests/DeleteAccountCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/commandTests/LogInCommandTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/commandTests/LogInCommandTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/DeleteAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/DeleteAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/FindSameNickNameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/FindSameNickNameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/FindSamePasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/FindSamePasswordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/LogInTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userDataFunctionsTests/LogInTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,27 +48,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dpopr/Downloads/postgresql-42.5.0.jar&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3816092&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Danylo/ComplexLabWithTests",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3816092",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Danylo\PP labs\untitled\src\main\java\command" />
       <recent name="C:\Users\Danylo\PP labs\untitled" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Danylo\ComplexLabWithTests" />
+      <recent name="C:\Users\Danylo\ComplexLabWithTests\src" />
+      <recent name="C:\Users\Danylo\ComplexLabWithTests\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindUserTest.finUserTest">
+  <component name="RunManager" selected="Application.MenuCaller">
     <configuration name="MenuCaller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="userMenu.MenuCaller" />
       <module name="ComplexLabWithTests" />
@@ -86,6 +103,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FindUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ComplexLabWithTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="userDataFunctionsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="userDataFunctionsTests" />
+      <option name="MAIN_CLASS_NAME" value="userDataFunctionsTests.FindUserTest" />
+      <option name="METHOD_NAME" value="finUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FindUserTest.finUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ComplexLabWithTests" />
       <extension name="coverage">
@@ -102,31 +135,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuizCommandTest.quizCommandTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ComplexLabWithTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="commandTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
-      <option name="PACKAGE_NAME" value="commandTests" />
-      <option name="MAIN_CLASS_NAME" value="commandTests.QuizCommandTest" />
-      <option name="METHOD_NAME" value="quizCommandTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindUserTest.finUserTest" />
         <item itemvalue="Application.MenuCaller" />
+        <item itemvalue="JUnit.FindUserTest" />
+        <item itemvalue="JUnit.FindUserTest.finUserTest" />
         <item itemvalue="JUnit.All in ComplexLabWithTests" />
         <item itemvalue="JUnit.All in ComplexLabsWithTests" />
-        <item itemvalue="JUnit.QuizCommandTest.quizCommandTest" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +185,9 @@
       <workItem from="1668765179145" duration="8000" />
       <workItem from="1668790970186" duration="1248000" />
       <workItem from="1668800462995" duration="2553000" />
+      <workItem from="1669749099539" duration="2365000" />
+      <workItem from="1669752342564" duration="538000" />
+      <workItem from="1669753430034" duration="4615000" />
     </task>
     <task id="LOCAL-00001" summary="ComplexLab">
       <created>1667071978258</created>

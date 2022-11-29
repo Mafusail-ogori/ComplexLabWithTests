@@ -17,7 +17,7 @@ public class DeleteAccountTest {
     UserData userData = new UserData();
 
     @Mock
-    User user = new User("mafusaillo", "dan", "haha");
+    User user = new User("mafusaillo", "dan", "haha", "dpo.prots@gmail.com");
 
     @Mock
     String userAnswer = "mafusaillo" +

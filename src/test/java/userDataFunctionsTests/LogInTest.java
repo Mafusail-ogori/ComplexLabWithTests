@@ -16,7 +16,7 @@ public class LogInTest {
     UserData userData = new UserData();
 
     @Mock
-    User user = new User("mafusaillo", "dan", "haha");
+    User user = new User("mafusaillo", "dan", "haha", "dpo.prots@gmail.com");
 
     @Mock
     String inputString =

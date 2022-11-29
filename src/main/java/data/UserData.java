@@ -1,6 +1,7 @@
 //Receiver
 package data;
 
+import logger.Log;
 import user.User;
 
 import java.io.FileReader;
@@ -30,7 +31,7 @@ public class UserData {
 
     public boolean findSameNickName(String nickName) {
         for (User user : userData) {
-            if (user.getNickName().equalsIgnoreCase(nickName)) {
+            if (user.getUserName().equalsIgnoreCase(nickName)) {
                 return true;
             }
         }
@@ -47,7 +48,7 @@ public class UserData {
     }
 
     public void signUp() throws IOException {
-        FileWriter record = new FileWriter("C:\\Users\\Danylo\\PP labs\\untitled\\src\\main\\resources\\signUpRecords.txt", true);
+        FileWriter record = new FileWriter("C:\\Users\\Danylo\\ComplexLabWithTests\\src\\main\\resources\\signUpRecords.txt", true);
         System.out.println(signUpText);
         Scanner scanner = new Scanner(System.in);
         String nickName, userName, password, emailAddress;
@@ -61,7 +62,7 @@ public class UserData {
             System.out.print("Enter password >> ");
             password = scanner.next();
             record.append(password).append("\n");
-            System.out.println("Enter your emailAddress");
+            System.out.print("Enter your emailAddress >> ");
             emailAddress = scanner.next();
             record.append(emailAddress).append("\n");
             userData.add(new User(nickName, userName, password, emailAddress));
@@ -74,7 +75,7 @@ public class UserData {
     }
     public User findUser(String userInput, String password){
         for (var user : userData) {
-            if ((user.getNickName().equalsIgnoreCase(userInput) || user.getEmailAddress().equalsIgnoreCase(userInput)) && user.getPassword().equals(password)){
+            if ((user.getUserName().equalsIgnoreCase(userInput) || user.getEmailAddress().equalsIgnoreCase(userInput)) && user.getPassword().equals(password)){
                 return user;
             }
         }
@@ -82,7 +83,7 @@ public class UserData {
     }
 
     public boolean accountExistsInFile(String userName) throws IOException {
-        FileReader fileReader = new FileReader("C:\\Users\\Danylo\\PP labs\\untitled\\src\\main\\resources\\signUpRecords.txt");
+        FileReader fileReader = new FileReader("C:\\Users\\Danylo\\ComplexLabWithTests\\src\\main\\resources\\signUpRecords.txt");
         Scanner scanner = new Scanner(fileReader);
         while (scanner.hasNext()){
             if(scanner.nextLine().equalsIgnoreCase(userName)){
@@ -94,14 +95,14 @@ public class UserData {
     }
 
     public void deleteFromFile(String userName) throws IOException {
-        FileReader fileReader = new FileReader("C:\\Users\\Danylo\\PP labs\\untitled\\src\\main\\resources\\signUpRecords.txt");
-        FileWriter fileWriter2 = new FileWriter("C:\\Users\\Danylo\\PP labs\\untitled\\src\\main\\resources\\signUpRecords.txt", true);
+        FileReader fileReader = new FileReader("C:\\Users\\Danylo\\ComplexLabWithTests\\src\\main\\resources\\signUpRecords.txt");
+        FileWriter fileWriter2 = new FileWriter("C:\\Users\\Danylo\\ComplexLabWithTests\\src\\main\\resources\\signUpRecords.txt", true);
         List<String> recordings = new ArrayList<>();
         Scanner scanner = new Scanner(fileReader);
         while (scanner.hasNext()){
             recordings.add(scanner.next());
         }
-        FileWriter fileWriter = new FileWriter("C:\\Users\\Danylo\\PP labs\\untitled\\src\\main\\resources\\signUpRecords.txt");
+        FileWriter fileWriter = new FileWriter("C:\\Users\\Danylo\\ComplexLabWithTests\\src\\main\\resources\\signUpRecords.txt");
         fileWriter.close();
         for (var i = 0; i < recordings.size(); i++) {
             if(recordings.get(i).equalsIgnoreCase(userName)){
@@ -128,12 +129,15 @@ public class UserData {
             System.out.print("Enter password >> ");
             String password = scanner.next();
             if (findPassword(password)){
+                Log.logMail(findUser(userInput, password).getUserName() + " account was deleted");
+                Log.logInfo(UserData.class, " account deleted");
                 this.userData.remove(findUser(userInput, password));
                 deleteFromFile(userInput);
                 System.out.println("Deleted successfully!");
             }
             else{
                 System.out.println("Incorrect password");
+                Log.logInfo(UserData.class, "incorrect password detected");
             }
         }
         else{
@@ -155,6 +159,8 @@ public class UserData {
             }
             else{
                 System.out.println("Incorrect password! try again!");
+                Log.logMail("Tried to enter an account with uncorect password");
+                Log.logInfo(UserData.class, "incorrect password attempt");
                 logIn();
             }
         }
@@ -165,7 +171,7 @@ public class UserData {
     }
 
     public void fileReading() throws IOException {
-        FileReader getAccounts = new FileReader("C:\\Users\\Danylo\\PP labs\\untitled\\src\\main\\resources\\signUpRecords.txt");
+        FileReader getAccounts = new FileReader("C:\\Users\\Danylo\\ComplexLabWithTests\\src\\main\\resources\\signUpRecords.txt");
         Scanner scanner = new Scanner(getAccounts);
         while(scanner.hasNext()){
             userData.add(new User(scanner.nextLine(), scanner.nextLine(), scanner.nextLine(), scanner.nextLine()));

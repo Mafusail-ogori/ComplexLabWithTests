@@ -1,16 +1,16 @@
 package user;
 
-import command.Command;
-
 public class User {
-    public User(String userName, String nickName, String password, String emailAddress) {
+    public User(String userName, String realName, String password, String emailAddress) {
         this.userName = userName;
-        this.nickName = nickName;
+        this.realName = realName;
         this.password = password;
         this.emailAddress = emailAddress;
     }
-    public String getNickName() {
-        return nickName;
+
+    public String getUserName() {return userName;}
+    public String getRealName() {
+        return realName;
     }
 
     public String getPassword() {
@@ -20,7 +20,7 @@ public class User {
     public String getEmailAddress() {return emailAddress; }
 
     protected String userName;
-    protected String nickName;
+    protected String realName;
     protected String password;
     protected String emailAddress;
 
@@ -28,6 +28,6 @@ public class User {
 
     @Override
     public String toString() {
-        return nickName + " " + userName + " " + password;
+        return userName + " " + realName + " " + password;
     }
 }
